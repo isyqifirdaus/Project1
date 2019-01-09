@@ -1,0 +1,41 @@
+<style>
+    .container{
+        width:50%;
+        height:200px;
+        overflow:auto;
+    }
+    .static{
+        position: static;
+        border: 2px solid green;
+    }
+    .relative{
+        position: relative;
+        border: 2px solid red;
+        left:20px;/*jarak dari posisi paling kiri sebesar 20px*/
+        bottom: 0; /* jarak dari posisi paling bawah sebesar 0px*/
+    }
+    .absolute{ position: fixed; border:2px solid black; bottom: 0; right: 0;}
+    .fixed{ position: fixed; border:2px solid blue;; left:20px; bottom: 40px; }
+    .sticky{
+        position: sticky;
+        border: 2px solid yellow;
+        top:0px;
+        left:20px;
+        background: darkblue;
+        color:white;
+    }
+</style>
+
+<div class="container">
+    <p class="sticky">
+        Ini adalah contoh dari posisi sticky
+    </p>
+    <p class="static">
+        <b>Ini adalah contoh dari position static</b> 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nihil officiis ut. Impedit dignissimos quo, quibusdam, amet inventore nihil odio adipisci aliquid excepturi sit repellendus magnam aut delectus doloremque temporibus!
+    </p>
+    <p class="relative">
+        <b>Ini adalah conotoh dari position static</b> 
+    </p>
+
+</div>
